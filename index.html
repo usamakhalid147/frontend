@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Functional Genetics Lab</title>
+    <!-- font awesome css code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css code -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap js code start -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- bootstrap js code end -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="logo-div">
+        <a href="./index.html">
+          <!-- <img src="./images/logo.svg" alt="logo" /> -->
+          <!-- <img src="./images/image.png" alt="logo" /> -->
+          <img class="logo-img" src="./images/IMG_logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="container-wrap" style="height: 146px; display: flex">
+        <div class="main-heading-div">
+          <div class="hamburger-div">
+            <i class="fa-solid fa-bars hamburger"></i>
+          </div>
+          <!-- <h1 class="heading">Main title</h1> -->
+          <!-- searchbar html code start -->
+          <form
+            class="input-field-div"
+            style="width: 100%"
+            id="homepage_search_form"
+          >
+            <input
+              type="text"
+              disabled
+              value="Gene Id"
+              class="gene-select border-radius gene_id_btn_bg_color"
+              style="text-align: center"
+            />
+
+            <input
+              type="text"
+              name="RNA/Genes"
+              id="input-field"
+              class="input-field border-radius input-field-home-page"
+              placeholder="Search: DN5-c0-g1-i14"
+            />
+
+            <input
+              type="button"
+              class="btn-search border-radius"
+              value="Search"
+            />
+          </form>
+          <!-- searchbar html code end -->
+        </div>
+        <div class="side-navbar" style="z-index: 1">
+          <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
+          <ul>
+            <li><a class="list-items" href="./index.html">Home</a></li>
+            <li><a class="list-items" href="./detail.html">Gene Search</a></li>
+            <li><a class="list-items" href="./resources.html">Resources</a></li>
+            <li><a class="list-items" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- heading section code start -->
+      <header class="homepage-header">
+        <div class="custom_row">
+          <div class="custom-col12">
+            <div class="homepage-header-parent-div">
+              <h3>
+                Redefining normal breast cell populations using long noncoding
+                RNAs
+              </h3>
+              <p>
+                Mainá Bitar
+                <a class="header-section-social-icons" href="/contact.html">
+                  <i class="fa-solid fa-envelope"></i> </a
+                >, Isela Sarahi Rivera, Isabela Almeida, Wei Shi, Kaltin
+                Ferguson, Jonathan Beesley, Sunil R Lakhani, Stacey L Edwards,
+                Juliet D French
+                <a class="header-section-social-icons" href="/contact.html">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </p>
+              <p>
+                <i>Nucleic Acids Research</i>, gkad339,
+                <a href="https://doi.org/10.1093/nar/gkad339" target="_blank">
+                  https://doi.org/10.1093/nar/gkad339</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- heading section code  end -->
+      <div class="carousel-image-information">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-inline-block h-20 w-100"
+                src="./images/home_1.PNG"
+                alt="First slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                <b> We discovered >13,600 lncRNAs</b> expressed in normal breast
+                epithelial cells (normal breast lncRNAs; NB-lncRNAs) that are
+                not in existing databases. To the best of our knowledge, this is
+                the most comprehensive transcriptome of the healthy mammary
+                gland to date.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-inline-block w-100"
+                src="./images/home_2.png"
+                alt="Second slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                We demonstrated that the expression of the NB-lncRNA alone
+                <b>can distinguish different cell populations</b> in the normal
+                breast. In fact, singlecell clustering based on the expression
+                of NBlncRNAs has revealed subpopulations of cells from the basal
+                component which GENCODEannotated genes failed to discern.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-inline-block w-100"
+                src="./images/home_3.png"
+                alt="Third slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                Using a metric we defined and named cluster specificity index
+                (CSI), we were able to show that<b>
+                  NB-lncRNA expression was more cluster-specific</b
+                >
+                than GENCODE-annotated gene expression, and therefore could
+                better define the resulting clusters and the cell subpopulations
+                they represent
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-inline-block w-100"
+                src="./images/home_4.png"
+                alt="Third slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                We also showed that NB-lncRNA expression was tissue-specific and
+                failed to correctly identify brain cell subpopulations. This
+                observation highlights the need to
+                <b
+                  >annotate tissue-specific lncRNAs prior to expression
+                  analyses.</b
+                >
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-inline-block w-100"
+                src="./images/home_5.png"
+                alt="Third slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                We identified
+                <b
+                  >NB-lncRNA markers of different mammary epithelial cell
+                  subpopulations.</b
+                >
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-inline-block w-100"
+                src="./images/home_6.png"
+                alt="Third slide"
+                style="max-height: 630px"
+              />
+              <p
+                style="padding-top: 20px; font-size: 20px; text-align: justify"
+              >
+                Finally, we identified
+                <b>NB-lncRNA markers of breast tumour subtypes.</b> We further
+                defined a panel of 100 NB-lncRNAs (most unannotated) that
+                performed better than previously defined protein-coding gene
+                markers in identifying the different subtypes of breast tumors
+                in TCGA.
+              </p>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer-div" style="border-top: none">
+        <div class="acknowledgement-div">
+          <h3>Acknowledgement of country</h3>
+          <p>
+            The Functional Genetics Lab acknowledges Aboriginal and Torres
+            Strait Islander peoples as the First people and Traditional
+            Custodians of the lands and waters where we meet, live, learn and
+            work. We acknowledge and celebrate the rich and thriving diversity
+            of Aboriginal and Torres Strait Islander cultures, the oldest
+            continuing living cultures in the world. We recognise that the
+            Functional Genetics Lab is located on the traditional lands of the
+            Turrbal people and pay respects to their Elders, knowledge holders
+            and leaders – past, present and emerging.
+          </p>
+        </div>
+        <div class="QIMR-logo-div">
+          <img src="./images/image.png" alt="logo" />
+        </div>
+      </footer>
+      <div class="copy-right-div">
+        <div class="medical-research-div">
+          <div class="links-div">
+            <a class="links" href="./contact.html" style="text-decoration: none"
+              >Contact</a
+            >
+            <span class="copyright-text">| Functional Genetics Lab | 2023</span>
+          </div>
+        </div>
+        <div class="social-links-div">
+          <a
+            class="social-icons"
+            href="https://github.com/FunctionalGeneticsLab/NB-lncRNAs"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            class="social-icons"
+            href="https://www.qimrberghofer.edu.au/people/juliet-french/"
+            target="_blank"
+          >
+            <i class="fa-solid fa-flask"></i>
+          </a>
+          <a
+            class="social-icons"
+            href="https://doi.org/10.1093/nar/gkad339"
+            target="_blank"
+          >
+            <i class="fa-solid fa-file-lines"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

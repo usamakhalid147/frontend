@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gene Details</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="logo-div">
+                <a href="./index.html">
+                    <img class="logo-img" src="./images/IMG_logo.png" alt="logo" />
+                </a>
+            </div>
+        </div>
+        <div class="container-wrap">
+            <div class="main-heading-div">
+                <div class="hamburger-div">
+                    <i class="fa-solid fa-bars hamburger"></i>
+                </div>
+                <div class="heading">Gene Search</div>
+            </div>
+            <div class="side-navbar">
+                <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
+                <ul>
+                    <li><a class="list-items" href="./index.html">Home</a></li>
+                    <li><a class="list-items" href="./detail.html">Gene Search</a></li>
+                    <li><a class="list-items" href="./resources.html">Resources</a></li>
+                    <li><a class="list-items" href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <form
+            class="input-field-div" style="padding-top: 20px;" id="detail_search_form">
+            <!-- <select class="gene-select">
+                    <option value="Gene Id">Gene Id</option>
+                  </select> -->
+            <input type="text" disabled value="Gene Id" class="gene-select border-radius" style="text-align:center;">
+
+            <input type="text" name="RNA/Genes" id="input-field" class="input-field border-radius" placeholder="Search: DN5-c0-g1-i14">
+
+            <input type="button" class="btn-search border-radius" value="Search">
+        </form>
+        <div class="about-wrapper" style="border:0;">
+            <h3>Single Cell Expression</h3>
+            <p>
+                <span id="single_cell_expression"></span>
+                <u>
+                    <b>
+                        <a class="selected-gene" style="color: red; text-decoration: underline;"></b>
+                    </u>
+                </a>
+            </p>
+
+
+        </div>
+<!-- 
+        <div class="about-wrapper" id="summary_id" style="border:0;">
+            <h3>Summary</h3>
+
+        </div> -->
+        <div class="about-wrapper" id="genomic_context" style="border:0;">
+            <h3>Genomic Context</h3>
+
+        </div>
+        <div class="about-wrapper" id="previous_annotation" style="border:0;">
+            <h3>Previous Annotation</h3>
+
+        </div>
+        <div class="about-wrapper" id="sequence" style="border:0;">
+            <h3>Sequence</h3>
+
+        </div>
+        <div class="about-wrapper" style="border:0;" id="structure_id">
+            <h3>Structure</h3>
+
+
+        </div>
+        <div class="about-wrapper" id="long_read" style="border:0;">
+            <h3>Long-read support</h3>
+
+        </div>
+        <div class="about-wrapper" id="confirmed_tss" style="border:0;">
+            <h3>Confirmed TSS</h3>
+
+
+        </div>
+        <div class="about-wrapper" id="func_annotation" style="border:0;">
+            <h3>Functional Annotation</h3>
+            <div id="elncRNA"></div>
+            <div id="pancRNA"></div>
+            <div id="TALR"></div>
+            <!-- <p><span class="previous_annotaion-red-color">DN733-c1-g1-i1</span> was not found to be an enhancer-associated lncRNA (elncRNA).<br></br>
+                  <span class="previous_annotaion-red-color">DN733-c1-g1-i1</span> was not found to be a promoter-associated lncRNA (pancRNA).<br></br>
+                   <span class="previous_annotaion-red-color">DN733-c1-g1-i1</span> was found to be a terminus-associated lncRNA (TALR).<br></br>
+                <span class="previous_annotaion-red-color">53%</span> of the UTR <span class="previous_annotaion-red-color">(uc001znm.3_3UTR)</span>
+                covers <span class="previous_annotaion-red-color">96%</span> of the lncRNA.</span></p>
+                <p>The associated annotated gene is <span class="previous_annotaion-red-color">ENST00000668616.1</span>, 
+                  from gene <span class="previous_annotaion-red-color">ENSG00000285920.2 (NA)</span>
+                 </p></p> -->
+        </div>
+        <div class="about-wrapper" id="expression_cell_type" style="border:0;">
+            <h3>Expression Levels in Cell Types</h3>
+
+        </div>
+        <div class="about-wrapper" id="expression_cell_subpopulations" style="border:0;">
+            <h3>Expression Levels in cell subpopulations</h3>
+        </div>
+        <div class="about-wrapper" id="marker_cancer_type" style="border:0;">
+            <h3>Marker of Cancer Type</h3>
+
+        </div>
+
+        <footer class="footer-div" id="detail_footer_div">
+                <div class="acknowledgement-div">
+                  <h3>Acknowledgement of country</h3>
+                  <p>
+                    The Functional Genetics Lab acknowledges Aboriginal and Torres
+                    Strait Islander peoples as the First people and Traditional
+                    Custodians of the lands and waters where we meet, live, learn and
+                    work. We acknowledge and celebrate the rich and thriving diversity
+                    of Aboriginal and Torres Strait Islander cultures, the oldest
+                    continuing living cultures in the world. We recognise that the
+                    Functional Genetics Lab is located on the traditional lands of the
+                    Turrbal people and pay respects to their Elders, knowledge holders
+                    and leaders – past, present and emerging.
+                  </p>
+                </div>
+                <div class="QIMR-logo-div">
+                  <img src="./images/image.png" alt="logo" />
+                </div>
+              </footer>
+        <div class="copy-right-div">
+            <div class="medical-research-div">
+                <div class="links-div">
+                    <a class="links" href="./contact.html">Contact
+                    </a>
+                    <span class="copyright-text">| Functional Genetics Lab | 2023</span>
+                </div>
+              
+            </div>
+            <div class="social-links-div">
+                <a
+                class="social-icons"
+                href="https://github.com/FunctionalGeneticsLab/NB-lncRNAs"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+              class="social-icons"
+              href="https://www.qimrberghofer.edu.au/people/juliet-french/"
+              target="_blank"
+              >
+                <i class="fa-solid fa-flask"></i>
+              </a>
+              <a
+                class="social-icons"
+                href="https://doi.org/10.1093/nar/gkad339"
+                target="_blank"
+              >
+                <i class="fa-solid fa-file-lines"></i>
+              </a>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

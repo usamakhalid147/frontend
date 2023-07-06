@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resources</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/about.css"> -->
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <!-- <script defer src="./js/app.js"></script> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="logo-div">
+        <a href="./index.html">
+          <img class="logo-img" src="./images/IMG_logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="container-wrap">
+        <div class="main-heading-div">
+          <div class="hamburger-div">
+            <i class="fa-solid fa-bars hamburger"></i>
+          </div>
+          <h1 class="heading">Resources</h1>
+        </div>
+        <div class="side-navbar">
+          <i class="fa-sharp fa-solid fa-xmark close-icon"></i>
+          <ul>
+            <li><a class="list-items" href="./index.html">Home</a></li>
+            <li><a class="list-items" href="./detail.html">Gene Search</a></li>
+            <li><a class="list-items" href="./resources.html">Resources</a></li>
+            <li><a class="list-items" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- download resources section html code start -->
+      <div
+        class="about-wrapper"
+        id="resources_about_wrapper_margin"
+        style="padding-left: 0"
+      >
+        <h3>Dataset Download</h3>
+
+        <div class="custom_row">
+          <div class="custom_col6">
+            <p class="table_description_paragraph">
+              Excel: Each table includes a first tab named “Table Description”,
+              in which all the additional tabs are described. A summary is
+              provided
+              <a
+                style="color: #007bff"
+                target="_blank "
+                href="./pdfs/DESCRIPTION-OF-TABLES-S1-S18.pdf"
+                alt="DESCRIPTION OF TABLES S1-S18"
+                >here</a
+              >
+            </p>
+            <button type="button" id="dataset_download_btn_sheets">
+              dataset .xlsx
+            </button>
+          </div>
+          <div class="custom_col6">
+            <p class="sequence-NBlncRNAs-paragraph">
+              Fasta: This file contains the names and sequences of all
+              NBlncRNAs, in a multifasta format. More on the format
+              <a
+                style="color: #007bff"
+                target="_blank "
+                href="https://www.metagenomics.wiki/tools/fastq/multi-fasta-format"
+                alt="multi-fasta-format"
+                >here</a
+              >
+            </p>
+            <button type="button" id="dataset_download_btn_fasta">
+              dataset .fasta
+            </button>
+          </div>
+        </div>
+        <div class="custom_row">
+          <div class="custom_col12">
+            <h3>Additional Data Availability</h3>
+            <p>
+              All the computational scripts used in this work (Script Files
+              1–12) are available through GitHub at the Functional Genetics
+              Laboratory page, under the repository named ‘NB-lncRNAs’:
+              <a
+                style="color: #007bff"
+                href="https://github.com/FunctionalGeneticsLab/NB-lncRNAs"
+                target="_blank"
+                >https://github.com/FunctionalGeneticsLab/NB-lncRNAs</a
+              >
+              and
+              <a
+                style="color: #007bff"
+                href="https://doi.org/10.5281/zenodo.7844207"
+                target="_blank"
+              >
+                https://doi.org/10.5281/zenodo.7844207.</a
+              >
+              Scripts for bulk RNAseq analysis used for tissue-specificity
+              analyses are available at
+              <a
+                style="color: #007bff"
+                href="https://github.com/FunctionalGeneticsLab/GRADE"
+                target="_blank"
+                >https://github.com/FunctionalGeneticsLab/GRADE</a
+              >
+              and
+              <a
+                style="color: #007bff"
+                href="https://doi.org/10.5281/zenodo.7844215"
+                target=""
+                _blank
+              >
+                https://doi.org/10.5281/zenodo.7844215.</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- download resources section html code end -->
+
+      <footer class="footer-div" id="resources_footer_div">
+        <div class="acknowledgement-div">
+          <h3>Acknowledgement of country</h3>
+          <p>
+            The Functional Genetics Lab acknowledges Aboriginal and Torres
+            Strait Islander peoples as the First people and Traditional
+            Custodians of the lands and waters where we meet, live, learn and
+            work. We acknowledge and celebrate the rich and thriving diversity
+            of Aboriginal and Torres Strait Islander cultures, the oldest
+            continuing living cultures in the world. We recognise that the
+            Functional Genetics Lab is located on the traditional lands of the
+            Turrbal people and pay respects to their Elders, knowledge holders
+            and leaders – past, present and emerging.
+          </p>
+        </div>
+        <div class="QIMR-logo-div">
+          <img src="./images/image.png" alt="logo" />
+        </div>
+      </footer>
+
+      <div class="copy-right-div">
+        <div class="medical-research-div">
+          <div class="links-div">
+            <a class="links" href="./contact.html">Contact </a>
+            <span class="copyright-text">| Functional Genetics Lab | 2023</span>
+          </div>
+        </div>
+        <div class="social-links-div">
+          <a
+            class="social-icons"
+            href="https://github.com/FunctionalGeneticsLab/NB-lncRNAs"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            class="social-icons"
+            href="https://www.qimrberghofer.edu.au/people/juliet-french/"
+            target="_blank"
+          >
+            <i class="fa-solid fa-flask"></i>
+          </a>
+          <a
+            class="social-icons"
+            href="https://doi.org/10.1093/nar/gkad339"
+            target="_blank"
+          >
+            <i class="fa-solid fa-file-lines"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.about-wrapper#expressionLevelDataTable{
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 90%;
+    width: 90%;
+    border-bottom: none;
+
+}
+#expressionlevel_side_navbar{
+  z-index: 2;
+}
+#expressionLevel_Grid{
+  z-index: 1;
+}
+#expressionlevel_footer_div{
+    border-top: none;
+}

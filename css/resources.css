@@ -1,0 +1,42 @@
+#dataset_download_btn {
+  margin-top: 1rem;
+}
+#dataset_download_btn_sheets {
+  margin-right: 10px;
+  padding: 12px 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+#dataset_download_btn_fasta {
+  padding: 12px 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#resources_about_wrapper_margin {
+  margin-bottom: 2rem;
+  border-bottom: none;
+}
+#resources_footer_div {
+  border-top: 0;
+}
+
+.table_description_paragraph {
+  padding: 20px 0;
+}
+.sequence-NBlncRNAs-paragraph {
+  padding: 20px 0;
+  padding-right: 50px;
+}
